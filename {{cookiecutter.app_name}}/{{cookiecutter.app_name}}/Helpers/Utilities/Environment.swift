@@ -30,7 +30,12 @@ public enum Environment {
     
     // MARK: - Plist values
     
-    static let serverUrl: URL = URL(string: getUnwrappedValue(for: .serverUrl))!
+    static let serverUrl: URL = {
+        guard let url = URL(string: getUnwrappedValue(for: .serverUrl)) else {
+            fatalError("🛑 couldn't unwrap server url")
+        }
+        return url
+    }()
     static let appUrlScheme: String = "\(getUnwrappedValue(for: .appUrlScheme))://"
     static let bundleVersion: String = getUnwrappedValue(for: .bundleVersion)
     

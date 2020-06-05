@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notificationsHandler.handleRemoteNotification(with: userInfo)
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         // Handle deeplink
         return false
     }
