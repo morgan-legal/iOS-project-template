@@ -11,6 +11,7 @@ target '{{cookiecutter.app_name}}' do
 
   pod 'R.swift', '5.0.0'
   pod 'SwiftLint', '0.31.0'
+  pod 'SwiftyBeaver'
 
   target '{{cookiecutter.app_name}}Tests' do
     inherit! :search_paths

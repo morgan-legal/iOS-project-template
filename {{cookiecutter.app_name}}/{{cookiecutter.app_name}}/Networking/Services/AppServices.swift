@@ -2,12 +2,12 @@
 //  AppServices.swift
 //  {{cookiecutter.app_name}}
 //
-//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//  Copyright © {{cookiecutter.company_name}}. All rights reserved.
 //
 
 import Foundation
 
-final class Service: NSObject {
+final class AppService: NSObject {
     
     private(set) var api: Api = {
         /**

@@ -2,7 +2,7 @@
 //  Environment.swift
 //  {{cookiecutter.app_name}}
 //
-//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//  Copyright © {{cookiecutter.company_name}}. All rights reserved.
 //
 
 import Foundation
