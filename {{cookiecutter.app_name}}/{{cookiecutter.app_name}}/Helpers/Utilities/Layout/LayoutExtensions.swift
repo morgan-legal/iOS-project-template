@@ -151,6 +151,7 @@ extension NSLayoutConstraint {
     }
     
     func multiplied(by multiplier: CGFloat) -> NSLayoutConstraint {
+        // swiftlint:disable force_unwrapping
         return NSLayoutConstraint(
             item: firstItem!,
             attribute: firstAttribute,
@@ -160,5 +161,6 @@ extension NSLayoutConstraint {
             multiplier: multiplier,
             constant: constant
         )
+        // swiftlint:enable force_unwrapping
     }
 }
