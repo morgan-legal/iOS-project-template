@@ -133,7 +133,8 @@ extension NSLayoutConstraint {
     /// This is the same as setting the `isActive` property to `true`.
     ///
     /// - Returns: The layout constraint.
-    @discardableResult func activate() -> NSLayoutConstraint {
+    @discardableResult
+    func activate() -> NSLayoutConstraint {
         self.isActive = true
         return self
     }
@@ -143,7 +144,8 @@ extension NSLayoutConstraint {
     /// This is the same as setting the `isActive` property to `false`.
     ///
     /// - Returns: The layout constraint.
-    @discardableResult func deactivate() -> NSLayoutConstraint {
+    @discardableResult
+    func deactivate() -> NSLayoutConstraint {
         self.isActive = false
         return self
     }

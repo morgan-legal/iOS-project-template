@@ -7,6 +7,8 @@
 
 import XCTest
 
+@testable import {{cookiecutter.app_name}}
+
 class LayoutExtensionsTests: XCTestCase {
     
     // MARK: - Properties

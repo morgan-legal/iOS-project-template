@@ -318,12 +318,12 @@
 			isa = PBXGroup;
 			children = (
 				58EA9774248C1F9B00FA020D /* LayoutAnchors.swift */,
-				58EA9778248C205900FA020D /* LayoutPriority.swift */,
-				58EA977C248C209C00FA020D /* LayoutOperators.swift */,
 				58EA977A248C207200FA020D /* LayoutConstraint.swift */,
 				58EA9776248C1FCE00FA020D /* LayoutExtensions.swift */,
 				58EA977E248C20D900FA020D /* LayoutExtensionsTests.swift */,
+				58EA977C248C209C00FA020D /* LayoutOperators.swift */,
 				58EA9780248C210A00FA020D /* LayoutOperatorsTests.swift */,
+				58EA9778248C205900FA020D /* LayoutPriority.swift */,
 				58EA9782248C212400FA020D /* LayoutPriorityTests.swift */,
 			);
 			path = Layout;

@@ -13,7 +13,8 @@ extension UICollectionView {
     ///
     /// - Parameter indexPath: indexPath
     /// - Returns: if it's or not the last row
-    @objc func isLastRow(at indexPath: IndexPath) -> Bool {
+    @objc
+    func isLastRow(at indexPath: IndexPath) -> Bool {
         return (indexPath.row == self.numberOfItems(inSection: indexPath.section) - 1)
     }
     

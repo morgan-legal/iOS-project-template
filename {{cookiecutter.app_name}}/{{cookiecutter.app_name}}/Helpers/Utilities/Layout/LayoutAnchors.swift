@@ -41,4 +41,3 @@ typealias SizeAnchors = AnchorPair<NSLayoutDimension, NSLayoutDimension>
 /// An `AnchorPair` combining two `AnchorPairs`s, typically a pair of
 /// horizontal and vertical anchors.
 typealias EdgeAnchors = AnchorPair<HorizontalAnchors, VerticalAnchors>
-
