@@ -14,6 +14,8 @@
 		2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E773F1F384BFD006C84D4 /* LaunchScreen.storyboard */; };
 		2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D51F3886D700531205 /* RootRouter.swift */; };
 		553FC23C214047CB001D9362 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553FC23B214047CB001D9362 /* R.generated.swift */; };
+		5825810F248E305C00C0A644 /* ColorBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825810E248E305C00C0A644 /* ColorBook.swift */; };
+		58258111248E30A100C0A644 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58258110248E30A100C0A644 /* Colors.xcassets */; };
 		58EA9725248A4D5900FA020D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9724248A4D5900FA020D /* Environment.swift */; };
 		58EA9727248A53AB00FA020D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9726248A53AB00FA020D /* UIColor+Extensions.swift */; };
 		58EA9731248A60EC00FA020D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9730248A60EC00FA020D /* UIImage+Extensions.swift */; };
@@ -66,6 +68,8 @@
 		2ABEE6D51F3886D700531205 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		553FC23B214047CB001D9362 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		55F50BE321404BDD00FAC039 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		5825810E248E305C00C0A644 /* ColorBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBook.swift; sourceTree = "<group>"; };
+		58258110248E30A100C0A644 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		58EA9721248A4B2400FA020D /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		58EA9722248A4B3300FA020D /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		58EA9723248A4B7F00FA020D /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 		2AFB31021F3853C6009C4586 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5825810D248E304B00C0A644 /* Colors */,
 				2A1DD4E21F38A09700712195 /* Launch */,
 				553FC239214046D0001D9362 /* Generated */,
 				2AB31DA11F38742A00B7D1F3 /* Translations */,
@@ -252,6 +257,15 @@
 				553FC23B214047CB001D9362 /* R.generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		5825810D248E304B00C0A644 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				5825810E248E305C00C0A644 /* ColorBook.swift */,
+				58258110248E30A100C0A644 /* Colors.xcassets */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		58EA9717248A3A4E00FA020D /* Services */ = {
@@ -414,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */,
+				58258111248E30A100C0A644 /* Colors.xcassets in Resources */,
 				2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */,
 				2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */,
 			);
@@ -492,6 +507,7 @@
 				58EA976A248C1AF300FA020D /* FontBook.swift in Sources */,
 				58EA9760248C133400FA020D /* ApiClient.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
+				5825810F248E305C00C0A644 /* ColorBook.swift in Sources */,
 				58EA9781248C210A00FA020D /* LayoutOperatorsTests.swift in Sources */,
 				58EA9727248A53AB00FA020D /* UIColor+Extensions.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
