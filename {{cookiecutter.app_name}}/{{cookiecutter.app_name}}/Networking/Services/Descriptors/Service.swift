@@ -10,3 +10,7 @@ import Foundation
 protocol Service {
     
 }
+
+protocol Delegate: class {
+    
+}

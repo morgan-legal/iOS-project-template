@@ -9,22 +9,29 @@ import Foundation
 
 final class AppService: NSObject {
     
-    private(set) var api: Api = {
-        /**
-            To pass an argument go to:
-            "Edit Scheme"
-            > "Run"
-            > Tab "Arguments"
-            Add a new argument in "Arguments passed on launch"
-         */
-        if CommandLine.arguments.contains("-mockedApi") {
-            return MockedApiClient()
-        } else {
-            return ApiClient()
-        }
-    }()
+    /// The singleton instance
+    static let instance = AppServices()
+    
+    
+    // MARK: Services
+    
+    private(set) var api: Api
+    
+    private(set) var movieService: MovieServiceDescriptor
+    
+    // MARK: Initializer
     
     override init() {
+        /* To pass an argument go to: "Edit Scheme"  > "Run" > Tab "Arguments"
+         Add a new argument in "Arguments passed on launch" */
+        if CommandLine.arguments.contains("-mockedApi") {
+            api = MockedApiClient()
+        } else {
+            api = ApiClient()
+        }
+        
+        movieService = MovieService(api: api)
+        
         super.init()
     }
     

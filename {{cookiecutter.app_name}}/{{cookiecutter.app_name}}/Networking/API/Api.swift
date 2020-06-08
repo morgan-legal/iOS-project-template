@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Api {
-    
+    func fetchMovies(completion: @escaping ([Movie]?) -> Void)
 }
