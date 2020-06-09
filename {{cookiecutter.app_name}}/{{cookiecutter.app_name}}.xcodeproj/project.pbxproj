@@ -25,6 +25,9 @@
 		5867F2A3248FD51100B947BA /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */; };
 		5867F2A5248FD53D00B947BA /* HostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A4248FD53D00B947BA /* HostTableViewCell.swift */; };
 		5867F2A9248FEC6C00B947BA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A8248FEC6C00B947BA /* UIView+Extensions.swift */; };
+		5880D5472490280800FA55CB /* LayoutExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA977E248C20D900FA020D /* LayoutExtensionsTests.swift */; };
+		5880D5482490280B00FA55CB /* LayoutOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9780248C210A00FA020D /* LayoutOperatorsTests.swift */; };
+		5880D5492490280F00FA55CB /* LayoutPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9782248C212400FA020D /* LayoutPriorityTests.swift */; };
 		58EA9725248A4D5900FA020D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9724248A4D5900FA020D /* Environment.swift */; };
 		58EA9727248A53AB00FA020D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9726248A53AB00FA020D /* UIColor+Extensions.swift */; };
 		58EA9731248A60EC00FA020D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9730248A60EC00FA020D /* UIImage+Extensions.swift */; };
@@ -44,9 +47,6 @@
 		58EA9779248C205900FA020D /* LayoutPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9778248C205900FA020D /* LayoutPriority.swift */; };
 		58EA977B248C207200FA020D /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA977A248C207200FA020D /* LayoutConstraint.swift */; };
 		58EA977D248C209C00FA020D /* LayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA977C248C209C00FA020D /* LayoutOperators.swift */; };
-		58EA977F248C20D900FA020D /* LayoutExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA977E248C20D900FA020D /* LayoutExtensionsTests.swift */; };
-		58EA9781248C210A00FA020D /* LayoutOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9780248C210A00FA020D /* LayoutOperatorsTests.swift */; };
-		58EA9783248C212400FA020D /* LayoutPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9782248C212400FA020D /* LayoutPriorityTests.swift */; };
 		C90395241FC622D2006F1DC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395231FC622D2006F1DC0 /* main.swift */; };
 		C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
 		C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
@@ -526,7 +526,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				58EA977B248C207200FA020D /* LayoutConstraint.swift in Sources */,
-				58EA9783248C212400FA020D /* LayoutPriorityTests.swift in Sources */,
 				58EA9770248C1EF500FA020D /* String+Extensions.swift in Sources */,
 				58EA976E248C1CBE00FA020D /* UICollectionView+Extensions.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */,
@@ -541,7 +540,6 @@
 				58EA9772248C1F2600FA020D /* Either.swift in Sources */,
 				58EA9731248A60EC00FA020D /* UIImage+Extensions.swift in Sources */,
 				58EA975E248C131A00FA020D /* Api.swift in Sources */,
-				58EA977F248C20D900FA020D /* LayoutExtensionsTests.swift in Sources */,
 				5825811E248E377400C0A644 /* MovieServiceDescriptor.swift in Sources */,
 				553FC23C214047CB001D9362 /* R.generated.swift in Sources */,
 				58EA977D248C209C00FA020D /* LayoutOperators.swift in Sources */,
@@ -560,7 +558,6 @@
 				58EA9760248C133400FA020D /* ApiClient.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
 				5825810F248E305C00C0A644 /* ColorBook.swift in Sources */,
-				58EA9781248C210A00FA020D /* LayoutOperatorsTests.swift in Sources */,
 				58EA9727248A53AB00FA020D /* UIColor+Extensions.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
 			);
@@ -571,6 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */,
+				5880D5482490280B00FA55CB /* LayoutOperatorsTests.swift in Sources */,
+				5880D5472490280800FA55CB /* LayoutExtensionsTests.swift in Sources */,
+				5880D5492490280F00FA55CB /* LayoutPriorityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
