@@ -11,7 +11,7 @@ final class MovieService: NSObject, MovieServiceDescriptor {
     
     // MARK: Properties
     
-    private(set) var posts: [Movie]?
+    private(set) var movies: [Movie]?
     
     /// The API service
     private let api: Api

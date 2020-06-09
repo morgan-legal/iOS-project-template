@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class AppService: NSObject {
+final class AppServices: NSObject {
     
     /// The singleton instance
     static let instance = AppServices()
