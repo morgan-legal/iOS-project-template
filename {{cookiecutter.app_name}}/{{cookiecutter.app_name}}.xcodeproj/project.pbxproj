@@ -20,6 +20,10 @@
 		5825811E248E377400C0A644 /* MovieServiceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825811D248E377400C0A644 /* MovieServiceDescriptor.swift */; };
 		58258120248E37E600C0A644 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825811F248E37E600C0A644 /* Movie.swift */; };
 		58258122248E381800C0A644 /* mocked-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 58258121248E381800C0A644 /* mocked-data.json */; };
+		5867F293248FA1DA00B947BA /* CoordinatorDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F292248FA1DA00B947BA /* CoordinatorDescriptor.swift */; };
+		5867F2A1248FD4E100B947BA /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A0248FD4E100B947BA /* SegmentedView.swift */; };
+		5867F2A3248FD51100B947BA /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */; };
+		5867F2A5248FD53D00B947BA /* HostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A4248FD53D00B947BA /* HostTableViewCell.swift */; };
 		58EA9725248A4D5900FA020D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9724248A4D5900FA020D /* Environment.swift */; };
 		58EA9727248A53AB00FA020D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9726248A53AB00FA020D /* UIColor+Extensions.swift */; };
 		58EA9731248A60EC00FA020D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9730248A60EC00FA020D /* UIImage+Extensions.swift */; };
@@ -78,6 +82,10 @@
 		5825811D248E377400C0A644 /* MovieServiceDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceDescriptor.swift; sourceTree = "<group>"; };
 		5825811F248E37E600C0A644 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		58258121248E381800C0A644 /* mocked-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mocked-data.json"; sourceTree = "<group>"; };
+		5867F292248FA1DA00B947BA /* CoordinatorDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDescriptor.swift; sourceTree = "<group>"; };
+		5867F2A0248FD4E100B947BA /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
+		5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
+		5867F2A4248FD53D00B947BA /* HostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTableViewCell.swift; sourceTree = "<group>"; };
 		58EA9721248A4B2400FA020D /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		58EA9722248A4B3300FA020D /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		58EA9723248A4B7F00FA020D /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -307,6 +315,7 @@
 		58EA9718248A3A7700FA020D /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				5867F292248FA1DA00B947BA /* CoordinatorDescriptor.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -321,6 +330,9 @@
 		58EA971D248A42CF00FA020D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5867F2A0248FD4E100B947BA /* SegmentedView.swift */,
+				5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */,
+				5867F2A4248FD53D00B947BA /* HostTableViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -516,10 +528,12 @@
 				58EA976E248C1CBE00FA020D /* UICollectionView+Extensions.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */,
 				C90395241FC622D2006F1DC0 /* main.swift in Sources */,
+				5867F2A3248FD51100B947BA /* FeedbackGenerator.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
 				58EA976C248C1C3F00FA020D /* UITableVIew+Extensions.swift in Sources */,
 				58EA9725248A4D5900FA020D /* Environment.swift in Sources */,
 				58EA9779248C205900FA020D /* LayoutPriority.swift in Sources */,
+				5867F2A5248FD53D00B947BA /* HostTableViewCell.swift in Sources */,
 				58EA9772248C1F2600FA020D /* Either.swift in Sources */,
 				58EA9731248A60EC00FA020D /* UIImage+Extensions.swift in Sources */,
 				58EA975E248C131A00FA020D /* Api.swift in Sources */,
@@ -531,8 +545,10 @@
 				5825811C248E373C00C0A644 /* MovieService.swift in Sources */,
 				58EA9766248C13D000FA020D /* UIViewController+Extensions.swift in Sources */,
 				58258120248E37E600C0A644 /* Movie.swift in Sources */,
+				5867F2A1248FD4E100B947BA /* SegmentedView.swift in Sources */,
 				58EA9775248C1F9B00FA020D /* LayoutAnchors.swift in Sources */,
 				58EA9762248C135C00FA020D /* MockApiClient.swift in Sources */,
+				5867F293248FA1DA00B947BA /* CoordinatorDescriptor.swift in Sources */,
 				58EA9768248C157500FA020D /* Service.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				58EA9764248C139700FA020D /* AppServices.swift in Sources */,
