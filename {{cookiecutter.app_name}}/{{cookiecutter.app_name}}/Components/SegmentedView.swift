@@ -510,4 +510,3 @@ final class SegmentedView: UIView {
     }
     
 }
-

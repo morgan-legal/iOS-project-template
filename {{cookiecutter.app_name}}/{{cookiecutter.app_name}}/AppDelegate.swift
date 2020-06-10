@@ -5,8 +5,8 @@
 //  Copyright © {{cookiecutter.company_name}}. All rights reserved.
 //
 
-import UIKit
 import SwiftyBeaver
+import UIKit
 
 /* The application logger */
 let log = SwiftyBeaver.self
