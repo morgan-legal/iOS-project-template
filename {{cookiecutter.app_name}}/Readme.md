@@ -1,6 +1,6 @@
 # {{cookiecutter.app_name}}
 
-Supports: iOS 11.x and above
+Supports: iOS 12.x and above
 
 ## Branches:
 
@@ -31,7 +31,7 @@ bundle exec pod install
 
 ### Core Dependencies
 
-* Swiftlint - A tool to enforce Swift style and conventions.
+* Swiftlint - A tool to enforce Swift style and conventions. See the .yml file for more info about the rules.
 * R.swift - Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
 
 ## Structure:
