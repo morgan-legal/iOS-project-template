@@ -1,8 +1,9 @@
 //
 //  UIViewController+Extensions.swift
-//  {{cookiecutter.app_name}}
+//  Stylee
 //
-//  Copyright © {{cookiecutter.company_name}}. All rights reserved.
+//  Created by Morgan Le Gal on 05/06/2020.
+//  Copyright © 2020 MadSeven. All rights reserved.
 //
 
 import UIKit
@@ -25,6 +26,20 @@ extension UIViewController {
         willMove(toParent: nil)
         view.removeFromSuperview()
         removeFromParent()
+    }
+    
+}
+
+extension UIViewController {
+    
+    /// This property will find the last presented view controller in the stack.
+    /// Recursively looping through presented controllers to find the top one.
+    var lastPresentedViewController: UIViewController {
+        if let presentedViewController = presentedViewController {
+            return presentedViewController.lastPresentedViewController
+        } else {
+            return self
+        }
     }
     
 }

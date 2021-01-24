@@ -1,14 +1,14 @@
 //
 //  UIImage+Extensions.swift
-//  {{cookiecutter.app_name}}
+//  Stylee
 //
-//  Copyright © {{cookiecutter.company_name}}. All rights reserved.
+//  Copyright © 2020 MadSeven. All rights reserved.
 //
 
 import UIKit
 
 extension UIImage {
-    
+        
     convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
@@ -22,44 +22,27 @@ extension UIImage {
         }
         self.init(cgImage: cgImage)
     }
-    
-    /**
-        The image's ratio
-     */
+
     var ratio: CGFloat {
         return size.width / size.height
     }
     
-    /**
-        Returns the average color fot the entire image
-        link: https://www.hackingwithswift.com/example-code/media/how-to-read-the-average-color-of-a-uiimage-using-ciareaaverage
-     */
-    var averageColor: UIColor? {
-        guard let inputImage = CIImage(image: self) else {
-            return nil
+    func compress(scale: CGFloat) -> UIImage? {
+        let newSize = CGSize(width: size.width * scale, height: size.height * scale)
+        
+        UIGraphicsBeginImageContext(newSize)
+        draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+        let compressedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return compressedImage
+    }
+    
+    func dataSize() -> Int {
+        // The quality of the resulting JPEG image, expressed as a value from 0.0 to 1.0. The value 0.0 represents the maximum compression (or lowest quality) while the value 1.0 represents the least compression (or best quality).
+        guard let data = jpegData(compressionQuality: 1) else {
+            return 0
         }
-        
-        let extentVector = CIVector(x: inputImage.extent.origin.x,
-                                    y: inputImage.extent.origin.y,
-                                    z: inputImage.extent.size.width,
-                                    w: inputImage.extent.size.height)
-
-        guard let filter = CIFilter(name: "CIAreaAverage", parameters: [kCIInputImageKey: inputImage, kCIInputExtentKey: extentVector]),
-            let outputImage = filter.outputImage else {
-            return nil
-        }
-        
-        var bitmap = [UInt8](repeating: 0, count: 4)
-        
-        // swiftlint:disable force_unwrapping
-        let context = CIContext(options: [.workingColorSpace: kCFNull!])
-        
-        context.render(outputImage, toBitmap: &bitmap, rowBytes: 4, bounds: CGRect(x: 0, y: 0, width: 1, height: 1), format: .RGBA8, colorSpace: nil)
-
-        return UIColor(red: CGFloat(bitmap[0]) / 255,
-                       green: CGFloat(bitmap[1]) / 255,
-                       blue: CGFloat(bitmap[2]) / 255,
-                       alpha: CGFloat(bitmap[3]) / 255)
+        return NSData(data: data).count
     }
     
 }

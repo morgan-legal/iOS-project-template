@@ -1,8 +1,8 @@
 //
 //  UICollectionView+Extensions.swift
-//  {{cookiecutter.app_name}}
+//  Stylee
 //
-//  Copyright © {{cookiecutter.company_name}}. All rights reserved.
+//  Copyright © 2020 MadSeven. All rights reserved.
 //
 
 import UIKit

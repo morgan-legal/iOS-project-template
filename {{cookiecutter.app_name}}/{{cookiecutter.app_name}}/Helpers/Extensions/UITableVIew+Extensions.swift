@@ -1,8 +1,8 @@
 //
 //  UITableVIew+Extensions.swift
-//  {{cookiecutter.app_name}}
+//  Stylee
 //
-//  Copyright © {{cookiecutter.company_name}}. All rights reserved.
+//  Copyright © 2020 MadSeven. All rights reserved.
 //
 
 import UIKit
@@ -67,6 +67,26 @@ extension UITableView {
             .components(separatedBy: ".")
             .dropFirst()
             .joined(separator: ".")
+    }
+    
+}
+
+// MARK: - UITableView + Safe
+
+extension UITableView {
+    
+    func safeReloadData() {
+        DispatchQueue.main.async {
+            self.reloadData()
+        }
+    }
+    
+    func reloadSectionAnimated(section: Int) {
+        DispatchQueue.main.async {
+            self.beginUpdates()
+            self.reloadSections(IndexSet(integer: section), with: .fade)
+            self.endUpdates()
+        }
     }
     
 }
