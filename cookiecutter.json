@@ -1,4 +1,6 @@
 {
     "app_name": "AwesomeApp",
+    "bundle_id": "com.awesome.app",
+    "app_scheme": "awesomeapp",
     "company_name": "AwesomeCompany"
 }

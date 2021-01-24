@@ -9,8 +9,8 @@
 
 // App Settings
 APP_NAME = {{cookiecutter.app_name}} (dev)
-APP_URL_SCHEME = my-app-scheme-dev
-APP_BUNDLE_ID = my-bundle-id-dev
+APP_URL_SCHEME = {{cookiecutter.app_scheme}}-dev
+APP_BUNDLE_ID = {{cookiecutter.bundle_id}}.dev
 
 // Networking
 SERVER_URL = my-dev-server-url.io

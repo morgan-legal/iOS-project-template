@@ -27,6 +27,8 @@
 		5880D5472490280800FA55CB /* LayoutExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA977E248C20D900FA020D /* LayoutExtensionsTests.swift */; };
 		5880D5482490280B00FA55CB /* LayoutOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9780248C210A00FA020D /* LayoutOperatorsTests.swift */; };
 		5880D5492490280F00FA55CB /* LayoutPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9782248C212400FA020D /* LayoutPriorityTests.swift */; };
+		58A704FA25BDA69E00778940 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58A704FC25BDA69E00778940 /* Localizable.strings */; };
+		58A7050625BDA7B300778940 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7050525BDA7B300778940 /* UserDefaultsService.swift */; };
 		58EA9725248A4D5900FA020D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9724248A4D5900FA020D /* Environment.swift */; };
 		58EA9727248A53AB00FA020D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9726248A53AB00FA020D /* UIColor+Extensions.swift */; };
 		58EA9731248A60EC00FA020D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9730248A60EC00FA020D /* UIImage+Extensions.swift */; };
@@ -49,7 +51,6 @@
 		C90395241FC622D2006F1DC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395231FC622D2006F1DC0 /* main.swift */; };
 		C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
 		C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
-		FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCB2C7CA1F57127800481080 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,10 @@
 		5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
 		5867F2A4248FD53D00B947BA /* HostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTableViewCell.swift; sourceTree = "<group>"; };
 		5867F2A8248FEC6C00B947BA /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		58A704FB25BDA69E00778940 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58A7050125BDA70600778940 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		58A7050225BDA71500778940 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58A7050525BDA7B300778940 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		58EA9721248A4B2400FA020D /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		58EA9722248A4B3300FA020D /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		58EA9723248A4B7F00FA020D /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -113,7 +118,6 @@
 		58EA9782248C212400FA020D /* LayoutPriorityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPriorityTests.swift; sourceTree = "<group>"; };
 		C90395231FC622D2006F1DC0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
-		FCB2C7CA1F57127800481080 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				C90395231FC622D2006F1DC0 /* main.swift */,
+				2ABEE6D51F3886D700531205 /* RootRouter.swift */,
 				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
 				58EA971E248A455E00FA020D /* Networking */,
 				58EA9718248A3A7700FA020D /* Coordinators */,
@@ -198,7 +203,7 @@
 		2AB31DA11F38742A00B7D1F3 /* Translations */ = {
 			isa = PBXGroup;
 			children = (
-				FCB2C7CA1F57127800481080 /* Localizable.strings */,
+				58A704FC25BDA69E00778940 /* Localizable.strings */,
 			);
 			path = Translations;
 			sourceTree = "<group>";
@@ -206,11 +211,11 @@
 		2AB31DA31F38744C00B7D1F3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2ABEE6D51F3886D700531205 /* RootRouter.swift */,
 				2A1DD4DE1F389C2200712195 /* DeeplinkHandler.swift */,
-				2A1DD4E01F389E2100712195 /* NotificationsHandler.swift */,
 				58EA9724248A4D5900FA020D /* Environment.swift */,
 				58EA9771248C1F2600FA020D /* Either.swift */,
+				2A1DD4E01F389E2100712195 /* NotificationsHandler.swift */,
+				58A7050525BDA7B300778940 /* UserDefaultsService.swift */,
 				58EA9773248C1F7D00FA020D /* Layout */,
 			);
 			path = Utilities;
@@ -233,12 +238,12 @@
 		2AFB31021F3853C6009C4586 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				58A704F925BDA68200778940 /* Fonts */,
 				5825810D248E304B00C0A644 /* Colors */,
 				2A1DD4E21F38A09700712195 /* Launch */,
 				553FC239214046D0001D9362 /* Generated */,
 				2AB31DA11F38742A00B7D1F3 /* Translations */,
 				2AFB31031F3853D9009C4586 /* Images */,
-				58EA9769248C1AF300FA020D /* FontBook.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -300,6 +305,14 @@
 				5825811D248E377400C0A644 /* MovieServiceDescriptor.swift */,
 			);
 			path = Descriptors;
+			sourceTree = "<group>";
+		};
+		58A704F925BDA68200778940 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58EA9769248C1AF300FA020D /* FontBook.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		58EA9717248A3A4E00FA020D /* Services */ = {
@@ -430,7 +443,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "{{cookiecutter.company_name}}";
 				TargetAttributes = {
 					2A1E77321F384BFC006C84D4 = {
@@ -450,6 +463,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 2A1E772A1F384BFC006C84D4;
 			productRefGroup = 2A1E77341F384BFC006C84D4 /* Products */;
@@ -467,7 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */,
+				58A704FA25BDA69E00778940 /* Localizable.strings in Resources */,
 				58258111248E30A100C0A644 /* Colors.xcassets in Resources */,
 				2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */,
 				2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */,
@@ -544,6 +558,7 @@
 				5825811C248E373C00C0A644 /* MovieService.swift in Sources */,
 				58EA9766248C13D000FA020D /* UIViewController+Extensions.swift in Sources */,
 				58258120248E37E600C0A644 /* Movie.swift in Sources */,
+				58A7050625BDA7B300778940 /* UserDefaultsService.swift in Sources */,
 				5867F2A1248FD4E100B947BA /* SegmentedView.swift in Sources */,
 				58EA9775248C1F9B00FA020D /* LayoutAnchors.swift in Sources */,
 				58EA9762248C135C00FA020D /* MockApiClient.swift in Sources */,
@@ -585,8 +600,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A1E77401F384BFD006C84D4 /* Base */,
+				58A7050125BDA70600778940 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		58A704FC25BDA69E00778940 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58A704FB25BDA69E00778940 /* en */,
+				58A7050225BDA71500778940 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -597,6 +622,7 @@
 			baseConfigurationReference = 58EA9721248A4B2400FA020D /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -618,6 +644,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -643,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -658,6 +685,7 @@
 			baseConfigurationReference = 58EA9721248A4B2400FA020D /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -679,6 +707,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -698,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -712,7 +741,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -warn-long-expression-type-checking=500";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
@@ -727,10 +756,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
+				PRODUCT_BUNDLE_IDENTIFIER = "--cookiecutter.bundle-id--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -777,6 +806,7 @@
 			baseConfigurationReference = 58EA9722248A4B3300FA020D /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -798,6 +828,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -823,7 +854,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -838,10 +869,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -warn-long-expression-type-checking=500";
-				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
+				PRODUCT_BUNDLE_IDENTIFIER = "--cookiecutter.bundle-id--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -871,6 +902,7 @@
 			baseConfigurationReference = 58EA9722248A4B3300FA020D /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -892,6 +924,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -911,7 +944,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -925,10 +958,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
+				PRODUCT_BUNDLE_IDENTIFIER = "--cookiecutter.bundle-id--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
