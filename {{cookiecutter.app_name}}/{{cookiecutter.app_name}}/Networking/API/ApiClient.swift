@@ -9,8 +9,6 @@ import Foundation
 
 final class ApiClient: Api {
     
-    func fetchMovies(completion: @escaping ([Movie]?) -> Void) {
-        
-    }
+    private(set) var router = Router<EndPoint>()
     
 }

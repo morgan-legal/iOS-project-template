@@ -18,7 +18,6 @@
 		5825811C248E373C00C0A644 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825811B248E373C00C0A644 /* MovieService.swift */; };
 		5825811E248E377400C0A644 /* MovieServiceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825811D248E377400C0A644 /* MovieServiceDescriptor.swift */; };
 		58258120248E37E600C0A644 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825811F248E37E600C0A644 /* Movie.swift */; };
-		58258122248E381800C0A644 /* mocked-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 58258121248E381800C0A644 /* mocked-data.json */; };
 		5867F293248FA1DA00B947BA /* CoordinatorDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F292248FA1DA00B947BA /* CoordinatorDescriptor.swift */; };
 		5867F2A1248FD4E100B947BA /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A0248FD4E100B947BA /* SegmentedView.swift */; };
 		5867F2A3248FD51100B947BA /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */; };
@@ -46,6 +45,18 @@
 		58A7053625BDAB1E00778940 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7052425BDAB1D00778940 /* UIColor+Extensions.swift */; };
 		58A7053725BDAB1E00778940 /* WKWebView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7052525BDAB1D00778940 /* WKWebView+Extensions.swift */; };
 		58A7053825BDAB1E00778940 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7052625BDAB1D00778940 /* UIViewController+Extensions.swift */; };
+		58A7053C25BDACE200778940 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7053B25BDACE200778940 /* BaseCoordinator.swift */; };
+		58A7054825BDAD8400778940 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054025BDAD8400778940 /* HTTPHeader.swift */; };
+		58A7054925BDAD8400778940 /* EndPointDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054125BDAD8400778940 /* EndPointDescriptor.swift */; };
+		58A7054A25BDAD8400778940 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054225BDAD8400778940 /* NetworkLogger.swift */; };
+		58A7054B25BDAD8400778940 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054325BDAD8400778940 /* HTTPMethod.swift */; };
+		58A7054C25BDAD8400778940 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054425BDAD8400778940 /* Router.swift */; };
+		58A7054D25BDAD8400778940 /* RouterDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054525BDAD8400778940 /* RouterDescriptor.swift */; };
+		58A7054E25BDAD8400778940 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054625BDAD8400778940 /* EndPoint.swift */; };
+		58A7054F25BDAD8400778940 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7054725BDAD8400778940 /* HTTPTask.swift */; };
+		58A7055625BDAE9F00778940 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7055325BDAE9F00778940 /* JSONParameterEncoder.swift */; };
+		58A7055725BDAE9F00778940 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7055425BDAE9F00778940 /* ParameterEncoding.swift */; };
+		58A7055825BDAE9F00778940 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7055525BDAE9F00778940 /* URLParameterEncoder.swift */; };
 		58EA9725248A4D5900FA020D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA9724248A4D5900FA020D /* Environment.swift */; };
 		58EA975E248C131A00FA020D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA975D248C131A00FA020D /* Api.swift */; };
 		58EA9760248C133400FA020D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA975F248C133400FA020D /* ApiClient.swift */; };
@@ -92,7 +103,6 @@
 		5825811B248E373C00C0A644 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		5825811D248E377400C0A644 /* MovieServiceDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceDescriptor.swift; sourceTree = "<group>"; };
 		5825811F248E37E600C0A644 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		58258121248E381800C0A644 /* mocked-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mocked-data.json"; sourceTree = "<group>"; };
 		5867F292248FA1DA00B947BA /* CoordinatorDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDescriptor.swift; sourceTree = "<group>"; };
 		5867F2A0248FD4E100B947BA /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
 		5867F2A2248FD51100B947BA /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
@@ -119,6 +129,18 @@
 		58A7052425BDAB1D00778940 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		58A7052525BDAB1D00778940 /* WKWebView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extensions.swift"; sourceTree = "<group>"; };
 		58A7052625BDAB1D00778940 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		58A7053B25BDACE200778940 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		58A7054025BDAD8400778940 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		58A7054125BDAD8400778940 /* EndPointDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointDescriptor.swift; sourceTree = "<group>"; };
+		58A7054225BDAD8400778940 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		58A7054325BDAD8400778940 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		58A7054425BDAD8400778940 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		58A7054525BDAD8400778940 /* RouterDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterDescriptor.swift; sourceTree = "<group>"; };
+		58A7054625BDAD8400778940 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		58A7054725BDAD8400778940 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		58A7055325BDAE9F00778940 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		58A7055425BDAE9F00778940 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		58A7055525BDAE9F00778940 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		58EA9721248A4B2400FA020D /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		58EA9722248A4B3300FA020D /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		58EA9723248A4B7F00FA020D /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -190,9 +212,9 @@
 		2A1E77351F384BFC006C84D4 /* {{cookiecutter.app_name}} */ = {
 			isa = PBXGroup;
 			children = (
+				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
 				C90395231FC622D2006F1DC0 /* main.swift */,
 				2ABEE6D51F3886D700531205 /* RootRouter.swift */,
-				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
 				58EA971E248A455E00FA020D /* Networking */,
 				58EA9718248A3A7700FA020D /* Coordinators */,
 				58EA9719248A3AAB00FA020D /* Modules */,
@@ -323,14 +345,6 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
-		58258119248E36ED00C0A644 /* Mocked Data */ = {
-			isa = PBXGroup;
-			children = (
-				58258121248E381800C0A644 /* mocked-data.json */,
-			);
-			path = "Mocked Data";
-			sourceTree = "<group>";
-		};
 		5825811A248E371100C0A644 /* Descriptors */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +362,31 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		58A7053F25BDAD7700778940 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				58A7054625BDAD8400778940 /* EndPoint.swift */,
+				58A7054125BDAD8400778940 /* EndPointDescriptor.swift */,
+				58A7054025BDAD8400778940 /* HTTPHeader.swift */,
+				58A7054325BDAD8400778940 /* HTTPMethod.swift */,
+				58A7054725BDAD8400778940 /* HTTPTask.swift */,
+				58A7054225BDAD8400778940 /* NetworkLogger.swift */,
+				58A7054425BDAD8400778940 /* Router.swift */,
+				58A7054525BDAD8400778940 /* RouterDescriptor.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		58A7055225BDAE9500778940 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				58A7055325BDAE9F00778940 /* JSONParameterEncoder.swift */,
+				58A7055425BDAE9F00778940 /* ParameterEncoding.swift */,
+				58A7055525BDAE9F00778940 /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
 		58EA9717248A3A4E00FA020D /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				5867F292248FA1DA00B947BA /* CoordinatorDescriptor.swift */,
+				58A7053B25BDACE200778940 /* BaseCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -396,10 +436,11 @@
 		58EA971F248A476B00FA020D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				58A7055225BDAE9500778940 /* Encoding */,
+				58A7053F25BDAD7700778940 /* Routing */,
 				58EA975D248C131A00FA020D /* Api.swift */,
 				58EA975F248C133400FA020D /* ApiClient.swift */,
 				58EA9761248C135C00FA020D /* MockApiClient.swift */,
-				58258119248E36ED00C0A644 /* Mocked Data */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -518,7 +559,6 @@
 				58258111248E30A100C0A644 /* Colors.xcassets in Resources */,
 				2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */,
 				2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */,
-				58258122248E381800C0A644 /* mocked-data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A7054925BDAD8400778940 /* EndPointDescriptor.swift in Sources */,
 				58A7053825BDAB1E00778940 /* UIViewController+Extensions.swift in Sources */,
 				58EA977B248C207200FA020D /* LayoutConstraint.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */,
@@ -580,6 +621,8 @@
 				58A7053325BDAB1E00778940 /* UIView+Extensions.swift in Sources */,
 				58EA9725248A4D5900FA020D /* Environment.swift in Sources */,
 				58A7052925BDAB1E00778940 /* Double+Extensions.swift in Sources */,
+				58A7054E25BDAD8400778940 /* EndPoint.swift in Sources */,
+				58A7054C25BDAD8400778940 /* Router.swift in Sources */,
 				58EA9779248C205900FA020D /* LayoutPriority.swift in Sources */,
 				58A7053725BDAB1E00778940 /* WKWebView+Extensions.swift in Sources */,
 				58A7052A25BDAB1E00778940 /* NotificationCenter+Extensions.swift in Sources */,
@@ -588,6 +631,7 @@
 				58EA975E248C131A00FA020D /* Api.swift in Sources */,
 				5825811E248E377400C0A644 /* MovieServiceDescriptor.swift in Sources */,
 				553FC23C214047CB001D9362 /* R.generated.swift in Sources */,
+				58A7054A25BDAD8400778940 /* NetworkLogger.swift in Sources */,
 				58A7052B25BDAB1E00778940 /* UIImage+Extensions.swift in Sources */,
 				58EA977D248C209C00FA020D /* LayoutOperators.swift in Sources */,
 				58A7053625BDAB1E00778940 /* UIColor+Extensions.swift in Sources */,
@@ -596,15 +640,22 @@
 				5825811C248E373C00C0A644 /* MovieService.swift in Sources */,
 				58258120248E37E600C0A644 /* Movie.swift in Sources */,
 				58A7053425BDAB1E00778940 /* String+Extensions.swift in Sources */,
+				58A7054B25BDAD8400778940 /* HTTPMethod.swift in Sources */,
+				58A7055825BDAE9F00778940 /* URLParameterEncoder.swift in Sources */,
 				58A7050625BDA7B300778940 /* UserDefaultsService.swift in Sources */,
+				58A7055725BDAE9F00778940 /* ParameterEncoding.swift in Sources */,
 				5867F2A1248FD4E100B947BA /* SegmentedView.swift in Sources */,
 				58EA9775248C1F9B00FA020D /* LayoutAnchors.swift in Sources */,
 				58A7052D25BDAB1E00778940 /* Date+Extensions.swift in Sources */,
 				58A7053025BDAB1E00778940 /* UIImageView+Extensions.swift in Sources */,
 				58EA9762248C135C00FA020D /* MockApiClient.swift in Sources */,
 				5867F293248FA1DA00B947BA /* CoordinatorDescriptor.swift in Sources */,
+				58A7053C25BDACE200778940 /* BaseCoordinator.swift in Sources */,
+				58A7055625BDAE9F00778940 /* JSONParameterEncoder.swift in Sources */,
 				58A7052F25BDAB1E00778940 /* UITapGestureRecognizer+Extensions.swift in Sources */,
+				58A7054825BDAD8400778940 /* HTTPHeader.swift in Sources */,
 				58A7053225BDAB1E00778940 /* Data+Extensions.swift in Sources */,
+				58A7054D25BDAD8400778940 /* RouterDescriptor.swift in Sources */,
 				58EA9768248C157500FA020D /* Service.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				58EA9764248C139700FA020D /* AppServices.swift in Sources */,
@@ -612,6 +663,7 @@
 				58EA976A248C1AF300FA020D /* FontBook.swift in Sources */,
 				58EA9760248C133400FA020D /* ApiClient.swift in Sources */,
 				58A7052E25BDAB1E00778940 /* UICollectionView+Extensions.swift in Sources */,
+				58A7054F25BDAD8400778940 /* HTTPTask.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
 				58A7052C25BDAB1E00778940 /* Encodable+Extensions.swift in Sources */,
