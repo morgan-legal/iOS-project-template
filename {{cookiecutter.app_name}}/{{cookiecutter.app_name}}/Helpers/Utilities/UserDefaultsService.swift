@@ -6,9 +6,10 @@
 //  Copyright © 2021 {{cookiecutter.company_name}}. All rights reserved.
 //
 
+import Foundation
+
 // Inspired by: https://swiftsenpai.com/swift/create-the-perfect-userdefaults-wrapper-using-property-wrapper/
 // Note: do not use the Codable version of this tutorial, it doesn't work
-
 
 // MARK: - Descriptor
 
