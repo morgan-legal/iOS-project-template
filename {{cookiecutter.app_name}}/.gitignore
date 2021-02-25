@@ -17,6 +17,8 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 IDEWorkspaceChecks.plist
+.DS_Store
+.DS_Store?
 
 ## Other
 *.moved-aside
